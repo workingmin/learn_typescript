@@ -1,0 +1,10 @@
+http:
+  host: 'localhost'
+  port: 3000
+db:
+  mysql:
+    host: 'localhost'
+    port: 3306
+    user: reader
+    password: reader
+    database: 'db_redis_instance'
