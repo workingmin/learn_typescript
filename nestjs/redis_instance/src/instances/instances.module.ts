@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { DatabaseInstance } from '../models/database-instance.entity';
+import { DatabaseInstance } from 'src/models/database-instance.entity';
 import { InstancesController } from './instances.controller';
 import { InstancesService } from './instances.service';
 

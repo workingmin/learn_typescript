@@ -3,7 +3,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { InstancesModule } from './instances/instances.module';
 import configuration from './config/configuration';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { InstancesController } from './instances/instances.controller';
+import { RouterModule } from '@nestjs/core';
 
 @Module({
   imports: [
@@ -25,6 +25,12 @@ import { InstancesController } from './instances/instances.controller';
       load: [configuration],
     }),
     InstancesModule,
+    RouterModule.register([
+      {
+        path: 'api',
+        module: InstancesModule,
+      }
+    ]),
   ],
 })
 export class AppModule {}

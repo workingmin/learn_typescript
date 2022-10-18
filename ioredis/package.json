@@ -1,0 +1,9 @@
+{
+    "name": "ioredis_demo",
+    "version": "1.0.0",
+    "dependencies": {
+        "fs": "0.0.1-security",
+        "ioredis": "^5.2.3",
+        "js-yaml": "^4.1.0"
+    }
+}
